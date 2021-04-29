@@ -35,15 +35,15 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![Alt text](./Assets/images/Kyle.jpeg?raw=true "Kristen Picard")
 
-[Kristen's Repositories](https://github.com/Youngin9210)
+[Kristen's Repositories](https://github.com/kristenpicard)
 
 ![Alt text](./Assets/images/Kyle.jpeg?raw=true "Kyle Euman")
 
-[Kyle's Repositories](https://github.com/Youngin9210)
+[Kyle's Repositories](https://github.com/KyleEuman)
 
 ![Alt text](./Assets/images/Mo.png?raw=true "Keith Tatad")
 
-[Mo's Repositories](https://github.com/moagermo)
+[Keith's Repositories](https://github.com/ktatad)
 
 ![Alt text](./Assets/images/Mo.png?raw=true "Mo Ager")
 
