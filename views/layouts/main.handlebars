@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biblioTECHa</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Media Mate</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <div class="flex-column justify-space-around">
+  <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-    <h1>biblioTECHa</h1>
-    <p>Welcome to biblioTECHa. A place to review and comment on your favorite TV showws and movies. </p>
-   
-    <nav>
-    {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+      <h1>My Media Mate</h1>
+      <p>Welcome to My Media Mate. A place to review and comment on your favorite TV showws and movies. </p>
+
+      <nav>
+        {{#if loggedIn}}
+        <a href="/">Homepage</a>
+        <a href="/dashboard">My Dashboard</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">Login</a>
+        <a href="/">Homepage</a>
         {{/if}}
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-        {{{ body }}}
+      {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
- {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}   
+  {{#if loggedIn}}
+  <script src="/public/JS/logout.js"></script>
+  {{/if}}
 </body>
+
 </html>

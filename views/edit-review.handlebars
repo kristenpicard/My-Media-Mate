@@ -1,0 +1,29 @@
+<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <a href="/dashboard">My Dashboard</a>
+    <h2 class="title mt-5">Edit Review</h2>
+    <form class="edit-review-form">
+        <div>
+            <label for="review-title">Movie Title:</label>
+            <input class="input" name="review-title" type="text" value="{{review.title}}" />
+        </div>
+        <div>
+            <label for="review-body">My Review:</label>
+            <input class="input" name="review-body" type="text" value="{{review.review_body}}" />
+        </div>
+        <br>
+        <div>
+            Created by you on {{format_date review.created_at}}
+            <br>
+            <br>
+            <a href="/review/{{review.id}}">{{review.comments.length}} comments</a>
+        </div>
+        <br>
+        <button type="submit">Save Changes</button>
+        <button type="click" class="delete-review-btn">Delete Review</button>
+    </form>
+
+    {{> comments review.comments}}
+</div>
+
+<script src="/public/JS/edit-review.js"></script>
+<script src="/public/JS/delete-review.js"></script>

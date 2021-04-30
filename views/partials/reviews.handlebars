@@ -1,0 +1,16 @@
+<div class="card text-white bg-dark mb-3">
+    <span><a href="/review/{{id}}" style="text-align: center;">Movie Title: {{title}}</a></span>
+    <br>
+    <br>
+    <span>
+        Posted by {{user.name}} on {{format_date created_at}}
+    </span>
+    <br>
+    <br>
+    <div class="content">
+        <p>Movie Review: {{review_body}}</p>
+    </div>
+    <span>
+        <a href="/review/{{id}}">{{comments.length}} comments</a>
+    </span>
+</div>

@@ -31,7 +31,7 @@ router.get("/", withAuth, (req, res) => {
     ],
   })
     .then((reviewData) => {
-      const posts = reviewData.map((review) => review.get({ plain: true }));
+      const reviews = reviewData.map((review) => review.get({ plain: true }));
       res.render("dashboard", { reviews, loggedIn: true });
     })
     .catch((err) => {
@@ -73,7 +73,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
         return;
       }
       const post = reviewData.get({ plain: true });
-      res.render("edit-post", {
+      res.render("edit-review", {
         post,
         loggedIn: true,
       });
@@ -113,7 +113,7 @@ router.get("/create/", withAuth, (req, res) => {
   })
     .then((reviewData) => {
       const reviews = reviewData.map((review) => review.get({ plain: true }));
-      res.render("create-post", { reviews, loggedIn: true });
+      res.render("create-review", { reviews, loggedIn: true });
     })
     .catch((err) => {
       console.log(err);
