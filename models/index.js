@@ -15,14 +15,14 @@ Comment.belongsTo(User, {
   foreignKey: "user_id",
 });
 Comment.belongsTo(Review, {
-  foreignKey: "post_id",
+  foreignKey: "review_id",
 });
 
 Review.belongsTo(User, {
   foreignKey: "user_id",
 });
 Review.hasMany(Comment, {
-  foreignKey: "post_id",
+  foreignKey: "review_id",
 });
 
-module.exports = { User, Comment, Post };
+module.exports = { User, Comment, Review };
