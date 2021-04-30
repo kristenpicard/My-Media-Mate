@@ -38,7 +38,7 @@ router.get("/", async (req, res) => {
 // GET one review
 router.get("/review/:id", async (req, res) => {
   try {
-    const reviewData = await Post.findByPk(req.params.id, {
+    const reviewData = await Review.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -58,7 +58,7 @@ router.get("/review/:id", async (req, res) => {
     });
 
     const review = reviewData.get({ plain: true });
-    res.render("one-post", { review, loggedIn: req.session.loggedIn });
+    res.render("one-review", { review, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

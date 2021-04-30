@@ -1,0 +1,28 @@
+<div style="text-align: center; width:40%">
+    <h2>My Dashboard</h2>
+    <a href="/dashboard/create/">
+        <button id="create-review">
+            Create New Review
+        </button>
+    </a>
+
+    <br>
+    <br>
+    <h2>Your Reviews:</h2>
+</div>
+
+{{#if reviews.length}}
+
+{{#each reviews as |review|}}
+{{> reviews review}}
+<a href="/dashboard/edit/{{review.id}}">
+    <button>
+        Edit Review
+    </button>
+</a>
+{{/each}}
+
+{{else}}
+<div>You do not currently have any seen movies</div>
+
+{{/if}}
