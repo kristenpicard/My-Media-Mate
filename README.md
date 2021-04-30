@@ -33,7 +33,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-![Alt text](./Assets/images/Kyle.jpeg?raw=true "Kristen Picard")
+![Alt text](/assets/images/Kristen.jpeg?raw=true "Kristen Picard")
 
 [Kristen's Repositories](https://github.com/kristenpicard)
 
