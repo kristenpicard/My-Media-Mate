@@ -32,6 +32,8 @@ router.get("/", withAuth, (req, res) => {
   })
     .then((reviewData) => {
       const reviews = reviewData.map((review) => review.get({ plain: true }));
+      console.log(JSON.stringify(reviews, null, 2));
+
       res.render("dashboard", { reviews, loggedIn: true });
     })
     .catch((err) => {
