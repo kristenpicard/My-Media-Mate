@@ -84,7 +84,7 @@ router.delete("/:id", withAuth, (req, res) => {
   Review.destroy({
     where: {
       id: req.params.id,
-      user_id: req.session.user_id,
+      // user_id: req.session.user_id,
     },
   })
     .then((reviewData) => {
@@ -96,7 +96,8 @@ router.delete("/:id", withAuth, (req, res) => {
     })
     .catch((err) => {
       console.log(err);
-      res.status(500).json(err);
+
+      res.status(500).json(err.message);
     });
 });
 
