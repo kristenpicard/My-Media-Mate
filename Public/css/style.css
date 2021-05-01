@@ -1,7 +1,13 @@
-header, .display-flex {
+ .display-flex {
     text-align: center;
+    border-bottom: 10px, solid blue;
 }
 
 .logo {
     margin: 0px, 100px, 0px, 50px ;
+}
+
+.no-button {
+margin-left: 500px;
+
 }
