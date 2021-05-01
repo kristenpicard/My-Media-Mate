@@ -41,7 +41,7 @@ router.get("/", withAuth, (req, res) => {
 });
 
 router.get("/edit/:id", withAuth, (req, res) => {
-  Post.findOne({
+  Review.findOne({
     where: {
       id: req.params.id,
     },
@@ -72,9 +72,9 @@ router.get("/edit/:id", withAuth, (req, res) => {
         res.status(404).json({ message: "No post found with this id" });
         return;
       }
-      const post = reviewData.get({ plain: true });
+      const review = reviewData.get({ plain: true });
       res.render("edit-review", {
-        post,
+        review,
         loggedIn: true,
       });
     })
