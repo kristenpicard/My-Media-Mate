@@ -1,11 +1,11 @@
 // Delete a Review JS
-const delPostFormHandler = async (event) => {
+const delRevFormHandler = async (event) => {
   event.preventDefault();
 
   let URL = document.URL;
   let URL_array = URL.split("/");
   let id = URL_array[URL_array.length - 1];
-
+  console.log(id);
   const response = await fetch(`/api/reviews/${id}`, {
     method: "DELETE",
     body: JSON.stringify({
@@ -25,5 +25,5 @@ const delPostFormHandler = async (event) => {
 
 // Delete
 document
-  .querySelector(".delete-post-btn")
-  .addEventListener("click", delPostFormHandler);
+  .querySelector(".delete-review-btn")
+  .addEventListener("click", delRevFormHandler);

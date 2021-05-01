@@ -81,7 +81,7 @@ router.put("/:id", withAuth, (req, res) => {
 });
 
 router.delete("/:id", withAuth, (req, res) => {
-  Post.destroy({
+  Review.destroy({
     where: {
       id: req.params.id,
       user_id: req.session.user_id,
