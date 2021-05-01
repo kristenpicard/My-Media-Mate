@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Media Mate</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/Public/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>My Media Mate</h1>
-      <p>Welcome to My Media Mate. A place to review and comment on your favorite TV showws and movies. </p>
-
+      <p>Welcome to My Media Mate. A place to review and comment on your favorite TV shows and movies. </p>
+    </header>
+    <img class ='logo' src='/assets/images/m3.png'>
       <nav>
         {{#if loggedIn}}
         <a href="/">Homepage</a>
@@ -25,7 +26,6 @@
         <a href="/">Homepage</a>
         {{/if}}
       </nav>
-    </header>
     <main class="container container-fluid mt-5">
       {{{ body }}}
     </main>
