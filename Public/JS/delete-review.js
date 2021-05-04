@@ -49,8 +49,8 @@ const delRevFormHandler = async (event) => {
   //     }
   //   }
   // });
-  // console.log(comments);
-
+  console.log(comments);
+  console.log(id);
   const response = await fetch(`/api/reviews/${id}`, {
     method: "DELETE",
     body: JSON.stringify({
