@@ -73,4 +73,20 @@ router.delete("/:id", withAuth, (req, res) => {
     });
 });
 
+// This was me trying to delete all comments
+// router.delete("/", withAuth, (req, res) => {
+//   Comment.destroy({
+//     where: {
+//       id: req.params.id,
+//     },
+//   })
+//     .then((CommentData) => {
+//       res.json(CommentData);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
+
 module.exports = router;
