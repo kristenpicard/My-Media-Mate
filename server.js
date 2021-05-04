@@ -31,6 +31,7 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+// when took out public, did not hit dashboard route
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 app.use(routes);

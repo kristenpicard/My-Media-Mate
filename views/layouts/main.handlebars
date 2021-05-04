@@ -14,18 +14,18 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>My Media Mate</h1>
       <p>Welcome to My Media Mate. A place to review and comment on your favorite TV shows and movies. </p>
-       </header>
-    <img class ='logo' src='/Assets/images/logo images/m3.png'>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/">Homepage</a>
-        <a href="/dashboard">My Dashboard</a> |
-        <button class="no-button" id="logout">Logout</button>
-        {{else}}
-        <a href="/login">Login</a>
-        <a href="/">Homepage</a>
-        {{/if}}
-      </nav>
+    </header>
+    <img class='logo' src='../../Public/assets/logo/m3.png'>
+    <nav>
+      {{#if loggedIn}}
+      <a href="/">Homepage</a>
+      <a href="/dashboard">My Dashboard</a> |
+      <button class="no-button" id="logout">Logout</button>
+      {{else}}
+      <a href="/login">Login</a>
+      <a href="/">Homepage</a>
+      {{/if}}
+    </nav>
     <main class="container container-fluid mt-5">
       {{{ body }}}
     </main>

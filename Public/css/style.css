@@ -1,13 +1,13 @@
- .display-flex {
-    text-align: center;
-    border-bottom: 10px, solid blue;
+.display-flex {
+  text-align: center;
+  border-bottom: 10px, solid blue;
 }
 
 .logo {
-    margin: 0px, 100px, 0px, 50px ;
+  margin: 0px, 100px, 0px, 50px;
+  width: 200px;
 }
 
 .no-button {
-margin-left: 500px;
-
+  margin-left: 500px;
 }
