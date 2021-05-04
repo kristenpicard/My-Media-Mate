@@ -1,6 +1,9 @@
 .display-flex {
   text-align: center;
-  border-bottom: 10px, solid blue;
+}
+
+.hero {
+  border-bottom: 25px, rgb(27, 99, 255);
 }
 
 .logo {
