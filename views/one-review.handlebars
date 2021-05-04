@@ -7,21 +7,27 @@
 <br>
 <br>
 <div>
-    {{#if loggedIn}}
+    <div class="card mb-6">
+        {{> comments review.comments}}
+        {{#if loggedIn}}
 
-    <form class="comment-form">
-        <div>
-            <textarea class="ml-5" name="comment-body"></textarea>
-        </div>
+        <form class="comment-form">
+            <div class="card-content">
+                <div class="card-content">
+                    <textarea class=" pr-5 textarea is-info" placeholder="Type comment here"
+                        name="comment-body"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button class="tag is-info is-medium is-light ml-5 mb-5" type="submit">Add Comment</button>
+                </div>
+            </div>
 
-        <div>
-            <button class="button ml-5 mb-5" type="submit">Add Comment</button>
-        </div>
+        </form>
+        {{/if}}
+    </div>
 
-    </form>
-    {{/if}}
 
-    {{> comments review.comments}}
 </div>
 {{#if loggedIn}}
 <script src="/Public/JS/comment.js"></script>
