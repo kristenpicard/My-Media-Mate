@@ -6,6 +6,7 @@ const { Review, Comment, User } = require("../models");
 router.get("/", async (req, res) => {
   try {
     const reviewData = await Review.findAll({
+      attributes: ["id", "review_body", "title", "created_at"],
       include: [
         {
           model: User,
@@ -13,7 +14,13 @@ router.get("/", async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ["id", "user_id", "review_id", "comment_body"],
+          attributes: [
+            "id",
+            "user_id",
+            "review_id",
+            "comment_body",
+            "created_at",
+          ],
           include: [
             {
               model: User,
@@ -39,6 +46,8 @@ router.get("/", async (req, res) => {
 router.get("/review/:id", async (req, res) => {
   try {
     const reviewData = await Review.findByPk(req.params.id, {
+      attributes: ["id", "review_body", "title", "created_at"],
+
       include: [
         {
           model: User,
@@ -46,7 +55,13 @@ router.get("/review/:id", async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ["id", "user_id", "review_id", "comment_body"],
+          attributes: [
+            "id",
+            "user_id",
+            "review_id",
+            "comment_body",
+            "created_at",
+          ],
           include: [
             {
               model: User,
