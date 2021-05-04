@@ -4,6 +4,7 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const routes = require("./controllers");
 const helpers = require("./utils/helpers");
+// const helpers = require("handlebars-helpers")();
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -31,7 +32,8 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// when took out public, did not hit dashboard route
+// The first public is the web path and the second is the filesystem path of the files being served.
+// This serves all of the files inside the second public directory, and have them accessible through http://localhost:3001/public/FILENAME
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 app.use(routes);

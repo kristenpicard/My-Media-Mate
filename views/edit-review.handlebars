@@ -1,29 +1,42 @@
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <a href="/dashboard">My Dashboard</a>
-    <h2 class="title mt-5">Edit Review</h2>
-    <form class="edit-review-form">
-        <div>
-            <label for="review-title">Movie Title:</label>
-            <input class="input" name="review-title" type="text" value="{{review.title}}" />
-        </div>
-        <div>
-            <label for="review-body">My Review:</label>
-            <input class="input" name="review-body" type="text" value="{{review.review_body}}" />
-        </div>
-        <br>
-        <div>
-            Created by you on {{format_date review.created_at}}
+<div class="card mb-6">
+    <header class="card-header card-header-title has-background-grey-lighter">
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+            <a href="/dashboard">Back to My Dashboard</a>
             <br>
             <br>
-            <a href="/review/{{review.id}}">{{review.comments.length}} comments</a>
+            <h2 class="title">Edit Review</h2>
         </div>
-        <br>
-        <button type="submit">Save Changes</button>
-        <button type="click" class="delete-review-btn">Delete Review</button>
-    </form>
-
-    {{> comments review.comments}}
+        <div class="column">
+            <span class=""> </span>
+        </div>
+    </header>
+    <div class="card-content">
+        <form class="edit-review-form">
+            <div>
+                <label for="review-title">Movie Title:</label>
+                <input class="input" name="review-title" type="text" value="{{review.title}}" />
+            </div>
+            <div>
+                <label for="review-body">My Review:</label>
+                <input class="input" name="review-body" type="text" value="{{review.review_body}}" />
+            </div>
+            <br>
+            <div>
+                Created by you on {{format_date review.created_at}}
+                <br>
+                <br>
+                <a href="/review/{{review.id}}">{{review.comments.length}} comments</a>
+            </div>
+            <br>
+            <button class="tag is-info is-medium is-light" type="submit">Save Changes</button>
+            <button class="tag is-info is-medium is-light" type="click" class="delete-review-btn">Delete Review</button>
+        </form>
+    </div>
+</div>
+{{> comments review.comments}}
 </div>
 
-<script src="/public/JS/edit-review.js"></script>
-<script src="/public/JS/delete-review.js"></script>
+<script src="/Public/JS/edit-review.js"></script>
+<script src="/Public/JS/delete-review.js"></script>
+<script src="/Public/JS/comment.js"></script>

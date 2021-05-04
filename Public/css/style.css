@@ -4,10 +4,29 @@
 }
 
 .logo {
-  margin: 0px, 100px, 0px, 50px;
-  width: 200px;
+  width: 150px;
+  float: left;
+  margin-right: 2%;
 }
 
 .no-button {
   margin-left: 500px;
+}
+
+.comment {
+  background-color: #cfe2ee;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment .text {
+  padding-left: 5%;
+}
+
+.comment .meta {
+  font-size: 90%;
+  opacity: 0.8;
+  padding-left: 5%;
 }

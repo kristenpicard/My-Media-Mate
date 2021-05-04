@@ -1,16 +1,24 @@
-<div class="card text-white bg-dark mb-3">
-    <span><a href="/review/{{id}}" style="text-align: center;">Movie Title: {{title}}</a></span>
-    <br>
-    <br>
-    <span>
-        Posted by {{user.name}} on {{format_date created_at}}
-    </span>
-    <br>
-    <br>
-    <div class="content">
-        <p>Movie Review: {{review_body}}</p>
+<div class="card mb-2">
+    <header class="card-header card-header-title has-background-grey-lighter">
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+            <span><a href="/review/{{id}}" style="text-align: center;">Movie Title: {{title}}</a></span>
+        </div>
+        <div class="column">
+            <span class=""> </span>
+        </div>
+    </header>
+    <div class="card-content">
+        <span>
+            Posted by {{user.name}} on {{format_date created_at}}
+        </span>
+        <br>
+        <br>
+        <div class="content has-text-justified">
+            <p>Movie Review: {{review_body}}</p>
+        </div>
+        <span>
+            <a href="/review/{{id}}">{{comments.length}} comments</a>
+        </span>
     </div>
-    <span>
-        <a href="/review/{{id}}">{{comments.length}} comments</a>
-    </span>
 </div>

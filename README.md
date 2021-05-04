@@ -1,28 +1,25 @@
 # biblioTECHa
 
-## Description 
+## Description
 
-Have you ever watched a movie and asked yourself "I wonder what so-and-so would think of that" ? We have! And that is why we made biblioTECHa. This is a fully customizable library that you can keep track of, plan out and even share with friends. You are able to track 
-
+Have you ever watched a movie and asked yourself "I wonder what so-and-so would think of that" ? We have! And that is why we made biblioTECHa. This is a fully customizable library that you can keep track of, plan out and even share with friends. You are able to track
 
 ## Table of Contents (Optional)
 
 If your README is very long, add a table of contents to make it easy for users to find what they need.
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
+## Usage
 
-## Usage 
-
-Provide instructions and examples for use. Include screenshots as needed. 
+Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
@@ -30,30 +27,27 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ![alt text](assets/images/screenshot.png)
 ```
 
-
 ## Credits
 
-![Alt text](/assets/images/Kristen.jpeg?raw=true "Kristen Picard")
+![Alt text](/Public/assets/Kristen.jpeg?raw=true "Kristen Picard")
 
 [Kristen's Repositories](https://github.com/kristenpicard)
 
-![Alt text](./Assets/images/Kyle.jpeg?raw=true "Kyle Euman")
+![Alt text](/Public/assets/Kyle.png?raw=true "Kyle Euman")
 
 [Kyle's Repositories](https://github.com/KyleEuman)
 
-![Alt text](./Assets/images/Mo.png?raw=true "Keith Tatad")
+![Alt text](/Public/assets/Keith.jpeg?raw=true "Keith Tatad")
 
 [Keith's Repositories](https://github.com/ktatad)
 
-![Alt text](./Assets/images/Mo.png?raw=true "Mo Ager")
+![Alt text](/Public/assets/Mo.png?raw=true "Mo Ager")
 
 [Mo's Repositories](https://github.com/moagermo)
-
 
 ## License
 
 The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
-
 
 ---
 

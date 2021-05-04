@@ -1,4 +1,9 @@
-{{> reviews review}}
+<div>
+    {{#if review}}
+    {{> reviews review}}
+    {{/if}}
+</div>
+
 <br>
 <br>
 <div>
@@ -10,7 +15,7 @@
         </div>
 
         <div>
-            <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
+            <button class="button ml-5 mb-5" type="submit">Add Comment</button>
         </div>
 
     </form>
@@ -19,5 +24,5 @@
     {{> comments review.comments}}
 </div>
 {{#if loggedIn}}
-<script src="/public/JS/comment.js"></script>
+<script src="/Public/JS/comment.js"></script>
 {{/if}}

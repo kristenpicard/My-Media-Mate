@@ -1,24 +1,27 @@
-<div style="text-align: center; width:40%">
-    <h2>My Dashboard</h2>
-    <a href="/dashboard/create/">
-        <button id="create-review">
-            Create New Review
-        </button>
-    </a>
+<section class="hero is-info">
+    <div class="hero-body">
 
-    <br>
-    <br>
-    <h2>Your Reviews:</h2>
-</div>
+        <p class="title">
+            My Dashboard
+        </p>
+        <a class="tag is-info is-medium is-light" href="/dashboard/create/" id="create-review">
+            Create New Review
+        </a>
+    </div>
+</section>
+
+<br>
+<br>
+<p class="subtitle">
+    My Reviews:
+</p>
 
 {{#if reviews.length}}
 
 {{#each reviews as |review|}}
 {{> reviews review}}
-<a href="/dashboard/edit/{{review.id}}">
-    <button>
-        Edit Review
-    </button>
+<a class="navbar-item tag is-info is-medium mb-6" href="/dashboard/edit/{{review.id}}">
+    Edit Review
 </a>
 {{/each}}
 
