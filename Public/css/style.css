@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.hero {
-  border-bottom: 25px, rgb(27, 99, 255);
+.container {
+  border-bottom: 15px, rgb(18, 93, 255);
 }
 
 .logo {
@@ -32,4 +32,23 @@
   font-size: 90%;
   opacity: 0.8;
   padding-left: 5%;
+}
+
+.card-content-s{
+  margin-top: -190px ;
+  margin-right: 0px;
+  margin-bottom: 0px ;
+  margin-left: 700px ;
+
+}
+
+.card-content-l {
+  margin-top: 0px ;
+  margin-right: 0px ;
+  margin-bottom: 0px;
+  margin-left: 280px;
+}
+
+* {
+  background-image: -webkit-linear-gradient(rgb(23, 64, 247),black);
 }
