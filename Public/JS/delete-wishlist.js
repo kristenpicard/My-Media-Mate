@@ -1,15 +1,15 @@
-// Delete a Review JS
-const delRevFormHandler = async (event) => {
+// Delete a wishlist item JS
+const delWishListFormHandler = async (event) => {
   event.preventDefault();
 
   let URL = document.URL;
   let URL_array = URL.split("/");
   let id = URL_array[URL_array.length - 1];
 
-  const response = await fetch(`/api/reviews/${id}`, {
+  const response = await fetch(`/api/wishlists/${id}`, {
     method: "DELETE",
     body: JSON.stringify({
-      review_id: id,
+      wishlist_id: id,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -25,5 +25,5 @@ const delRevFormHandler = async (event) => {
 
 // Delete
 document
-  .querySelector(".delete-review-btn")
-  .addEventListener("click", delRevFormHandler);
+  .querySelector(".delete-wishlist-btn")
+  .addEventListener("click", delWishListFormHandler);

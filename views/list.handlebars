@@ -1,0 +1,19 @@
+<br>
+<br>
+<p class="subtitle">
+    My Future Watch List:
+</p>
+
+{{#if wishlists.length}}
+
+{{#each wishlists as |wishlist|}}
+{{> wishlists wishlist}}
+<a class="navbar-item tag is-info is-medium mb-6" href="/dashboard/edit/{{wishlist.id}}">
+    Edit List Item
+</a>
+{{/each}}
+
+{{else}}
+<div>You do not currently have any movies on your watch list</div>
+
+{{/if}}
