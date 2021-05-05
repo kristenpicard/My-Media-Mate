@@ -1,8 +1,9 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
-const { Review, Comment, User } = require("../models");
+const { Review, Comment, User, WishList } = require("../models");
 const withAuth = require("../utils/auth");
 
+// REVIEW ROUTES ON DASHBOARD
 router.get("/", withAuth, (req, res) => {
   Review.findAll({
     where: {
@@ -116,6 +117,31 @@ router.get("/create/", withAuth, (req, res) => {
     .then((reviewData) => {
       const reviews = reviewData.map((review) => review.get({ plain: true }));
       res.render("create-review", { reviews, loggedIn: true });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+router.get("/createwishlist/", withAuth, (req, res) => {
+  WishList.findAll({
+    where: {
+      user_id: req.session.user_id,
+    },
+    attributes: ["id", "wishlist_title"],
+    include: [
+      {
+        model: User,
+        attributes: ["name"],
+      },
+    ],
+  })
+    .then((wishlistData) => {
+      const wishlists = wishlistData.map((wishlist) =>
+        wishlist.get({ plain: true })
+      );
+      res.render("create-wishlist", { wishlists, loggedIn: true });
     })
     .catch((err) => {
       console.log(err);
