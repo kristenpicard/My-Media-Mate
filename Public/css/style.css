@@ -50,7 +50,7 @@
 }
 
 * {
-  background-image: -webkit-linear-gradient(rgb(23, 64, 247),black);
+  background-image: image();
 }
 .footer
 {
