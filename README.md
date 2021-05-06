@@ -2,26 +2,26 @@
 
 ## Description
 
-Have you ever watched a movie and asked yourself "I wonder what so-and-so would think of that" ? We have! And that is why we made biblioTECHa. This is a fully customizable library that you can keep track of, plan out and even share with friends. You are able to track
+My Media Mate is an application for users to have a personal library of all of the movies and television shows they have watched and watch to watch in the future.
 
-## Table of Contents (Optional)
+Functionality:
 
-If your README is very long, add a table of contents to make it easy for users to find what they need.
+- Users can "sign-up" and in subsequent visits can login to view their personal dashboard.
+- Once logged in users can see a list of their viewed media along with their review of the movie or show.
+- Reviews can be edited and/or deleted if desired.
+- Users can comment on their reviews.
+- Users can also view their custom list of Titles of movies and shows that they hope to see in the future.
+- Once a title on this "Want to Watch" list is seen, the user has the ability to delete it from the list.
 
-- [Installation](#installation)
+## Table of Contents
+
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+HERE WE WILL ADD SCREENSHOTS AND LINK TO DEPLOYED APP
 
 ```md
 ![alt text](assets/images/screenshot.png)
@@ -45,32 +45,12 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 [Mo's Repositories](https://github.com/moagermo)
 
+## Questions
+
+If you would like to discuss this project, please reach out to one of the contributors via GitHub. (Linked above)
+
 ## License
 
-The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, consider adding a heading called "Features" and listing them there.
-
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+[MIT License Link](https://spdx.org/licenses/MIT.html)
