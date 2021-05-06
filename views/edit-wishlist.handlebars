@@ -14,7 +14,10 @@
     <div class="card-content">
         <form class="edit-wishlist-form">
             <div>
-                <span><a href="/wishlist/{{id}}" style="text-align: center;">Movie Title: {{wishlist_title}}</a></span>
+                <span>
+                    <div class="subtitle"><strong>Title:</strong>
+                        {{wishlist.wishlist_title}}</div>
+                </span>
             </div>
             <br>
             <button class="tag is-info is-medium is-light delete-wishlist-btn" type="click">

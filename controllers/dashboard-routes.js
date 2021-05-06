@@ -4,6 +4,8 @@ const { Review, Comment, User, WishList } = require("../models");
 const withAuth = require("../utils/auth");
 
 // REVIEW ROUTES ON DASHBOARD
+
+// Route to view user dashboard
 router.get("/", withAuth, (req, res) => {
   Review.findAll({
     where: {
@@ -33,7 +35,6 @@ router.get("/", withAuth, (req, res) => {
   })
     .then((reviewData) => {
       const reviews = reviewData.map((review) => review.get({ plain: true }));
-      console.log(JSON.stringify(reviews, null, 2));
 
       res.render("dashboard", { reviews, loggedIn: true });
     })
@@ -43,6 +44,7 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
+// Takes user to edit form for review specified by id
 router.get("/edit/:id", withAuth, (req, res) => {
   Review.findOne({
     where: {
@@ -87,6 +89,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
     });
 });
 
+// When user clicks Create new review on dashboard, takes them to the form to create a new review
 router.get("/create/", withAuth, (req, res) => {
   Review.findAll({
     where: {
@@ -124,6 +127,7 @@ router.get("/create/", withAuth, (req, res) => {
     });
 });
 
+// This route takes the user to the "Add to Future Watch List" form to add a title
 router.get("/createwishlist/", withAuth, (req, res) => {
   WishList.findAll({
     where: {
@@ -142,6 +146,67 @@ router.get("/createwishlist/", withAuth, (req, res) => {
         wishlist.get({ plain: true })
       );
       res.render("create-wishlist", { wishlists, loggedIn: true });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+// Takes user to List of title they want to watch in the future
+router.get("/list", withAuth, (req, res) => {
+  WishList.findAll({
+    where: {
+      user_id: req.session.user_id,
+    },
+    attributes: ["id", "wishlist_title"],
+    include: [
+      {
+        model: User,
+        attributes: ["name"],
+      },
+    ],
+  })
+    .then((wishlistData) => {
+      const wishlists = wishlistData.map((wishlist) =>
+        wishlist.get({ plain: true })
+      );
+
+      res.render("list", {
+        wishlists,
+        loggedIn: req.session.loggedIn,
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
+// When user clicks Edit List Item, this routes them to the edit form to delete that particular item
+router.get("/edit/list/:id", withAuth, (req, res) => {
+  WishList.findOne({
+    where: {
+      id: req.params.id,
+    },
+    attributes: ["id", "wishlist_title"],
+    include: [
+      {
+        model: User,
+        attributes: ["name"],
+      },
+    ],
+  })
+    .then((wishlistData) => {
+      if (!wishlistData) {
+        res.status(404).json({ message: "No post found with this id" });
+        return;
+      }
+      const wishlist = wishlistData.get({ plain: true });
+      res.render("edit-wishlist", {
+        wishlist,
+        loggedIn: true,
+      });
     })
     .catch((err) => {
       console.log(err);
