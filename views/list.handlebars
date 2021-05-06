@@ -1,6 +1,19 @@
 <br>
 <br>
-<p class="subtitle">
+<div class="card mb-6">
+    <div class="card-content">
+        <h2 class="subtitle">Add to Future Watch List</h2>
+        <form class="new-wishlist-form">
+            <div>
+                <label class="subtitle" for="wishlist-title">Movie/Show Title:</label>
+                <input class="input" type="text" id="wishlist-title" name="wishlist-title" placeholder="Title Here" />
+            </div>
+            <br>
+            <button type="submit" class="tag is-info is-medium is-light">Create New Watch List Item</button>
+        </form>
+    </div>
+</div>
+<p class="title">
     My Future Watch List:
 </p>
 
@@ -8,12 +21,16 @@
 
 {{#each wishlists as |wishlist|}}
 {{> wishlists wishlist}}
-<a class="navbar-item tag is-info is-medium mb-6" href="/dashboard/edit/{{wishlist.id}}">
+<a class="navbar-item tag is-info is-medium mb-6" href="/dashboard/edit/list/{{wishlist.id}}">
     Edit List Item
 </a>
+
 {{/each}}
 
 {{else}}
 <div>You do not currently have any movies on your watch list</div>
 
 {{/if}}
+
+<script src="/Public/JS/add-wishlist.js"></script>
+<script src="/Public/JS/delete-wishlist.js"></script>

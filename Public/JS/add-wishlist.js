@@ -16,7 +16,7 @@ const addWishFormHandler = async (event) => {
   });
 
   if (response.ok) {
-    document.location.replace("/list");
+    document.location.reload();
   } else {
     alert(response.statusText);
   }
