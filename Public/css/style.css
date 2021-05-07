@@ -9,9 +9,8 @@
   background-position: center;
 }
 
-html
-{
-	background-color: transparent;
+html {
+  background-color: transparent;
 }
 
 .logo {
@@ -56,8 +55,6 @@ html
   margin-left: 250px;
 }
 
-
-
 .footer {
   text-align: center;
   bottom: 0;
@@ -69,51 +66,45 @@ html
 }
 
 .title {
-color: black;
+  color: black;
 }
 
 .subtitle {
   color: black;
 }
 
-.img
-{
-	width: 130px;
-	height: 130px;
+.img {
+  width: 130px;
+  height: 130px;
 }
 
-.media
-{
-	background-color: white;
-	text-align: center;
-	padding: 2%;
-	box-sizing: content-box;
+.media {
+  background-color: white;
+  text-align: center;
+  padding: 2%;
+  box-sizing: content-box;
 }
-
 
 .media-content {
-  color:black;
+  color: black;
+  font-size: large;
 }
 
-.media{
-  color:black;
+.media {
+  color: black;
 }
 
-.card-content-l
-{
-	margin: auto;
-	padding: 50px;
+.card-content-l {
+  margin: auto;
+  padding: 50px;
 }
 
-.card-content-s
-{
-	margin: auto;
-	padding: 50px;
+.card-content-s {
+  margin: auto;
+  padding: 50px;
 }
 
-.card
-{
-	width: fit-content;
-	margin: auto;
+.card {
+  width: fit-content;
+  margin: auto;
 }
-

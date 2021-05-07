@@ -1,39 +1,40 @@
-const track = document.querySelector('.carousel__track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel__button—right');
-const prevButton = document.querySelector('.carousel__button—left');
-const dotsNav = document.querySelector('.carousel__nav');
-const dots = Array.from(dotsNav.children);
+// Wanted to do a carousel in homepage but ended up ditching the idea
 
-const slideWidth = slides[0].getBoundingClientRect().width;
-const setSlidePosition = (slide, index) => 
-{
-	slide.style.left = slideWidth * index + 'px';
-}
-slides.forEach(setSlidePosition);
+// const track = document.querySelector('.carousel__track');
+// const slides = Array.from(track.children);
+// const nextButton = document.querySelector('.carousel__button—right');
+// const prevButton = document.querySelector('.carousel__button—left');
+// const dotsNav = document.querySelector('.carousel__nav');
+// const dots = Array.from(dotsNav.children);
 
-const moveToSlide = (track, currentSlide, targetSlide) =>
-{
-	track.style.transform = 'translateX( - ' + targetSlide.style.left + ')';
-	currentSlide.classList.remove('current-slide');
-	targetSlide.classList.add('current-slide');
-}
+// const slideWidth = slides[0].getBoundingClientRect().width;
+// const setSlidePosition = (slide, index) =>
+// {
+// 	slide.style.left = slideWidth * index + 'px';
+// }
+// slides.forEach(setSlidePosition);
 
-prevButton.addEventListener('click', e => 
-{
-	const currentSlide = track.querySelector('.current-slide');
-	const prevSlide = currentSlide.previousElementSibling;
+// const moveToSlide = (track, currentSlide, targetSlide) =>
+// {
+// 	track.style.transform = 'translateX( - ' + targetSlide.style.left + ')';
+// 	currentSlide.classList.remove('current-slide');
+// 	targetSlide.classList.add('current-slide');
+// }
 
-	moveToSlide(track, currentSlide, prevSlide);
-});
+// prevButton.addEventListener('click', e =>
+// {
+// 	const currentSlide = track.querySelector('.current-slide');
+// 	const prevSlide = currentSlide.previousElementSibling;
 
-nextButton.addEventListener('click', e => 
-{
-	const currentSlide = track.querySelector('.current-slide');
-	const nextSlide = currentSlide.nextElementSibling;
-	
-	moveToSlide(track, currentSlide, nextSlide);
-});
+// 	moveToSlide(track, currentSlide, prevSlide);
+// });
 
-dotsNav.addEventListener
+// nextButton.addEventListener('click', e =>
+// {
+// 	const currentSlide = track.querySelector('.current-slide');
+// 	const nextSlide = currentSlide.nextElementSibling;
 
+// 	moveToSlide(track, currentSlide, nextSlide);
+// });
+
+// dotsNav.addEventListener

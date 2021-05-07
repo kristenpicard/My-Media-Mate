@@ -3,32 +3,6 @@ const { Review, Comment, User, WishList } = require("../../models");
 const sequelize = require("../../config/connection");
 const withAuth = require("../../utils/auth");
 
-// router.get("/list", (req, res) => {
-//   WishList.findAll({})
-//     .then((wishlistData) => {
-//       res.json(wishlistData);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
-// router.get("/:id", (req, res) => {
-//   WishList.findOne({
-//     where: {
-//       id: req.params.id,
-//     },
-//   })
-//     .then((wishlistData) => {
-//       res.json(wishlistData);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.status(500).json(err);
-//     });
-// });
-
 // Post to create a new Want to Watch list item
 router.post("/", withAuth, (req, res) => {
   WishList.create({

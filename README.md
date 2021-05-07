@@ -2,7 +2,7 @@
 
 ## Description
 
-My Media Mate is an application for users to have a personal library of all of the movies and television shows they have watched and watch to watch in the future.
+My Media Mate is an application for users to have a personal library of all of the movies and television shows they have watched and want to watch in the future.
 
 Functionality:
 
@@ -57,7 +57,6 @@ Functionality:
 ![Express](https://img.shields.io/badge/Express-lightblue)
 ![CSS](https://img.shields.io/badge/CSS-lightblue)
 ![HTML](https://img.shields.io/badge/HTML-lightblue)
-
 
 ## Questions
 
