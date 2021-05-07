@@ -21,11 +21,11 @@ Functionality:
 
 ## Usage
 
-HERE WE WILL ADD SCREENSHOTS AND LINK TO DEPLOYED APP
+![user signup](/Public/assets/images/m3usersignup.gif)
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+![create review](/Public/assets/images/m3createreview.gif)
+
+![want to watch](/Public/assets/images/m3wanttowatch.gif)
 
 ## Credits
 
