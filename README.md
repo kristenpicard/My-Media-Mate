@@ -17,33 +17,47 @@ Functionality:
 
 - [Usage](#usage)
 - [Credits](#credits)
+- [Technology Used](#tech)
 - [License](#license)
 
 ## Usage
 
-![user signup](/Public/assets/images/m3usersignup.gif)
+![user signup](./Public/assets/images/m3usersignup.gif)
 
-![create review](/Public/assets/images/m3createreview.gif)
+![create review](./Public/assets/images/m3createreview.gif)
 
-![want to watch](/Public/assets/images/m3wanttowatch.gif)
+![want to watch](./Public/assets/images/m3wanttowatch.gif)
 
 ## Credits
 
-![Alt text](/Public/assets/Kristen.jpeg?raw=true "Kristen Picard")
+![Alt text](./Public/assets/Kristen.jpeg?raw=true "Kristen Picard")
 
 [Kristen's Repositories](https://github.com/kristenpicard)
 
-![Alt text](/Public/assets/Kyle.png?raw=true "Kyle Euman")
+![Alt text](./Public/assets/Kyle.png?raw=true "Kyle Euman")
 
 [Kyle's Repositories](https://github.com/KyleEuman)
 
-![Alt text](/Public/assets/Keith.jpeg?raw=true "Keith Tatad")
+![Alt text](./Public/assets/Keith.jpeg?raw=true "Keith Tatad")
 
 [Keith's Repositories](https://github.com/ktatad)
 
-![Alt text](/Public/assets/Mo.png?raw=true "Mo Ager")
+![Alt text](./Public/assets/Mo.png?raw=true "Mo Ager")
 
 [Mo's Repositories](https://github.com/moagermo)
+
+## Tech
+
+![Javascript](https://img.shields.io/badge/JavaScript-69.1%25-lightblue)
+![Handlebars](https://img.shields.io/badge/Handlebars-30.8%25-lightblue)
+![MySQL](https://img.shields.io/badge/MySQL-lightblue)
+![Sequelize](https://img.shields.io/badge/Sequelize-lightblue)
+![Bulma](https://img.shields.io/badge/Bulma-lightblue)
+![Node](https://img.shields.io/badge/Node-lightblue)
+![Express](https://img.shields.io/badge/Express-lightblue)
+![CSS](https://img.shields.io/badge/CSS-lightblue)
+![HTML](https://img.shields.io/badge/HTML-lightblue)
+
 
 ## Questions
 
