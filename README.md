@@ -25,6 +25,8 @@ Functionality:
 
 ![create review](/Public/assets/images/m3createreview.gif)
 
+![want to watch](/Public/assets/images/m3wanttowatch.gif)
+
 ## Credits
 
 ![Alt text](/Public/assets/Kristen.jpeg?raw=true "Kristen Picard")
