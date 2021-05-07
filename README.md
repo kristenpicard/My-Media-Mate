@@ -21,11 +21,7 @@ Functionality:
 
 ## Usage
 
-HERE WE WILL ADD SCREENSHOTS AND LINK TO DEPLOYED APP
-
-```md
-![alt text](assets/images/screenshot.png)
-```
+![user signup](/Public/assets/images/m3usersignup.gif)
 
 ## Credits
 
