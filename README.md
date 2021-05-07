@@ -23,6 +23,8 @@ Functionality:
 
 ![user signup](/Public/assets/images/m3usersignup.gif)
 
+![create review](/Public/assets/images/m3createreview.gif)
+
 ## Credits
 
 ![Alt text](/Public/assets/Kristen.jpeg?raw=true "Kristen Picard")
