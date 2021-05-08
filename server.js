@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // The first public is the web path and the second is the filesystem path of the files being served.
 // This serves all of the files inside the second public directory, and have them accessible through http://localhost:3001/public/FILENAME
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/public", express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
