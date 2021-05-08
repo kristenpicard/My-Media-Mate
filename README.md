@@ -22,6 +22,8 @@ Functionality:
 
 ## Usage
 
+View the deployed app at https://whispering-ridge-05864.herokuapp.com/
+
 ![user signup](./Public/assets/images/m3usersignup.gif)
 
 ![create review](./Public/assets/images/m3createreview.gif)
